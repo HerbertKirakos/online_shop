@@ -12,12 +12,12 @@ export const CartPage = () => {
         <MainLayout>
             <div className="mt-16 max-w-screen-xl mx-auto sm:mb-28 sm:px-4">
                 <div className="flex flex-col items-center mb-16">
-                    <h3 className="text-[26px] text-[#272727] mb-6 font-medium">
+                    <h3 className="text-[26px] text-black mb-6 font-medium">
                         Your cart items
                     </h3>
                     <ul>
                         <li>
-                            <NavLink to="/" className="text-lg font-normal text-[#56B280] border-b border-[#56B280]">
+                            <NavLink to="/" className="text-lg font-normal text-green border-b border-green">
                                 Back to shopping
                             </NavLink>
                         </li>
@@ -29,21 +29,21 @@ export const CartPage = () => {
                 <div className="sm:flex sm:justify-end gap-16 mb-28">
                     <div className="flex flex-col sm:items-end items-center">
                         <div className="flex gap-10 mb-3">
-                            <span className="text-xl font-medium text-[#272727]">
+                            <span className="text-xl font-medium text-black">
                                 Sub-total
                             </span>
                                 
-                            <span className="text-xl font-medium text-[#272727] text-center">
+                            <span className="text-xl font-medium text-black text-center">
                                 $  {(total).toFixed(1)}
                             </span>
                         </div>
                 
-                        <span className="text-base text-center font-normal text-[#9E9E9E] mb-9 sm:mb-0">
+                        <span className="text-base text-center font-normal text-gray mb-9 sm:mb-0">
                             Tax and shipping cost will be calculated later
                         </span>
                     </div>
                     <div className="flex justify-center">
-                        <NavLink to="/authentication" className="bg-[#56B280] px-11 py-2 text-white text-xl text-center max-h-[44px] sm:max-w-[180px] w-full  whitespace-nowrap font-medium rounded-md  border border-[#56B280] hover:bg-white hover:text-[#56B280]  duration-300 ">
+                        <NavLink to="/authentication" className="bg-green px-11 py-2 text-white text-xl text-center max-h-[44px] sm:max-w-[180px] w-full whitespace-nowrap font-medium rounded-md border border-green hover:bg-white hover:text-green duration-300">
                             Check-out
                         </NavLink>
                     </div>

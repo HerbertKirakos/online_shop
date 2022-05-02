@@ -16,8 +16,8 @@ export const ProductCartTable = () => {
 
     return (
         <div className="relative overflow-x-auto shadow-md sm:rounded-lg mb-11">
-            <table className="w-full text-lg text-left text-[#272727]">
-                <thead className="text-base text-[#272727] bg-gray-50">
+            <table className="w-full text-lg text-left text-black">
+                <thead className="text-base text-black bg-light-gray">
                     <tr>
                         <th scope="col" className="px-6 py-3">
                             Product
@@ -38,14 +38,14 @@ export const ProductCartTable = () => {
                         cartItems && cartItems.length > 0 &&
                         cartItems.map(item => (
                             <tr className="bg-white border-b" key={item.id}>
-                                <th scope="row" className="px-6 py-4 font-medium text-[#272727]">
+                                <th scope="row" className="px-6 py-4 font-medium text-black">
                                     <div className="flex gap-8"> 
                                         <img src={item.image} className="max-w-[160px] shadow-md"/>
                                         <div>
-                                            <h3 className="text-[26px] text-[#272727] mb-5 font-medium">
+                                            <h3 className="text-[26px] text-black mb-5 font-medium">
                                               {item.name}
                                             </h3>
-                                            <button className="text-lg text-[#56B280] border-b border-[#56B280]" onClick={() => dispatch(removeCartItem(item.id))}>
+                                            <button className="text-lg text-green border-b border-green" onClick={() => dispatch(removeCartItem(item.id))}>
                                                 Remove
                                             </button>
                                         </div>

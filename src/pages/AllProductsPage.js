@@ -35,10 +35,10 @@ export const AllProductsPage = () => {
         <MainLayout>
             <div className="max-w-screen-xl mx-auto sm:mb-32 mb-16 px-4 flex flex-col items-center">
                 <div className="flex flex-col items-center mb-16 mt-16">
-                    <h2 className="text-[40px] text-center font-medium text-[#0B254B] ">
+                    <h2 className="text-[40px] text-center font-medium text-dark-blue ">
                         Products
                     </h2>
-                    <span className="text-lg text-center font-medium text-[#5E6E89]">
+                    <span className="text-lg text-center font-medium text-light-blue">
                         Order it for you or for your beloved ones 
                     </span>
                 </div>
